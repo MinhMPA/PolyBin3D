@@ -75,9 +75,46 @@ Further details are described in the tutorials, which describe
 
 ## Dependencies
 - Python 2/3
-- numpy, scipy
-- fftw *or* mkl_fft [for FFTs on the CPU] *or* JAX [for GPU computations]
-- nbodykit [not required, but useful for testing]
+- `numpy`, `scipy`
+- `fftw` *or* `mkl_fft` [for FFTs on the CPU] *or* `JAX` [for GPU computations]
+- `nbodykit` [not required, but useful for testing]
+
+## Installation
+### Install with pip
+```bash
+pip install "PolyBin3D @ git+https://github.com/oliverphilcox/PolyBin3D"
+```
+
+To install with `fftw` *or* `mkl_fft` *or* `jax` as the backend, use:
+```bash
+pip install "PolyBin3D[fftw] @ git+https://github.com/oliverphilcox/PolyBin3D"
+```
+
+> Replace `fftw` with `mkl_fft` or `jax` as appropriate.
+> 
+> You can also install nbodykit as an optional dependency by adding `[nbodykit]` to the dependencies
+
+### Install from source
+```bash
+git clone https://github.com/oliverphilcox/PolyBin3D.git
+pip install .
+```
+
+To install in editable mode, use:
+```bash
+pip install -e .
+```
+
+To recompile the cython files (*only in editable mode*), use:
+```bash
+python setup.py build_ext --inplace
+python setup.py clean --all # to remove temp build files
+```
+
+> The optional dependencies can be installed by adding the relevant extras to the pip install command, e.g. `pip install .[fftw, nbodykit]`.
+
+
+
 
 ## References
 **Code references:**

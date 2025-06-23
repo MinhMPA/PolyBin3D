@@ -1,0 +1,42 @@
+[build-system]
+requires = [
+    "setuptools", 
+    "wheel", 
+    "cython",
+    "numpy < 2.0.0", # Avoid numpy 2.0.0 for now for type errors in Cython
+]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "PolyBin3D"
+description = "Binned power spectrum and bispectrum estimation for 3D fields"
+readme = "README.md"
+license = { file = "LICENSE" }
+version = "0.1.0"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+requires-python = ">=3.9"
+dependencies = [ # Base requirements
+    "numpy",
+    "scipy",
+]
+
+
+[project.optional-dependencies]
+fftw = ["pyfftw"]
+mkl_fftw = ["mkl-fft"]
+jax = ["jax"]
+testing = ["nbodykit"]
+
+
+[project.urls]
+Repository = "https://github.com/oliverphilcox/PolyBin3D.git"
+
+
+[tool.setuptools.packages.find]
+namespaces = false
