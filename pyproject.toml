@@ -29,7 +29,7 @@ dependencies = [ # Base requirements
 
 [project.optional-dependencies]
 fftw = ["pyfftw"]
-mkl-fftw = ["mkl-fft"]
+mkl_fft = ["mkl-fft"]
 jax = ["jax"]
 testing = ["nbodykit"]
 
