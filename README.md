@@ -132,4 +132,5 @@ python setup.py clean --all # to remove temp build files
 - Ivanov et al. (2023, [arXiv](https://arxiv.org/abs/2302.04414)): Cosmology with the Galaxy Bispectrum Multipoles: Optimal Estimation and Application to BOSS Data.
 - Moretti et al. (2023, [arXiv](https://arxiv.org/abs/2306.09275)): Constraints on the growth index and neutrino mass from the BOSS power spectrum.
 - He et al. (2023, [arXiv](https://arxiv.org/abs/2309.03956)): Self-Interacting Neutrinos in Light of Large-Scale Structure Data.
-- Camarena et al. (2023, [arXiv](https://arxiv.org/abs/2309.03941)): The two-mode puzzle: Confronting self-interacting neutrinos with the full shape of the galaxy power spectrum 
+- Camarena et al. (2023, [arXiv](https://arxiv.org/abs/2309.03941)): The two-mode puzzle: Confronting self-interacting neutrinos with the full shape of the galaxy power spectrum
+- Chudaykin, Ivanov, Philcox (2025, [arXiv](https://arxiv.org/abs/2507.13433)): Reanalyzing DESI DR1: 1. LCDM Constraints from the Power Spectrum & Bispectrum
